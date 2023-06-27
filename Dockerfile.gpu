@@ -1,5 +1,4 @@
-FROM nvidia/cuda:8.0-cudnn5-devel-ubuntu16.04
-MAINTAINER "Andrei Maksimov"
+FROM nvidia/cuda:11.3.0-devel-ubuntu20.04
 
 RUN apt-get update && apt-get install -y wget ca-certificates \
     git curl vim python3-dev python3-pip \
@@ -7,7 +6,7 @@ RUN apt-get update && apt-get install -y wget ca-certificates \
 
 RUN pip3 install --upgrade pip
 RUN pip3 install tensorflow-gpu
-RUN pip3 install numpy pandas sklearn matplotlib seaborn jupyter pyyaml h5py
+RUN pip3 install numpy pandas sklearn scikit-image matplotlib seaborn jupyter pyyaml h5py Cython requests
 RUN pip3 install keras --no-deps
 
 RUN ["mkdir", "notebooks"]

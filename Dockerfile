@@ -1,16 +1,15 @@
-FROM ubuntu:20.04
-MAINTAINER "Andrei Maksimov"
+FROM ubuntu:latest
 
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && apt-get install -y \
-	libopencv-dev \
-        python3-pip \
-	python3-opencv && \
+    libopencv-dev \
+    python3-pip \
+    python3-opencv && \
     rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install tensorflow && \
-    pip3 install numpy pandas sklearn matplotlib seaborn jupyter pyyaml h5py && \
+    pip3 install numpy pandas scikit-learn scikit-image matplotlib seaborn jupyter pyyaml h5py Cython requests && \
     pip3 install keras --no-deps && \
     pip3 install opencv-python && \
     pip3 install imutils
