@@ -1,4 +1,4 @@
-# Introduction to AWS Machine Learning
+# Introduction to Machine Learning using Docker and AWS Sagemaker
 
 This repository created to learn Machine Learning concepts over Docker and also using AWS Sagemaker. The Dockerfile builds image for the below frequently software ideal for Data Science and Machine Learning:
  - NumPy
