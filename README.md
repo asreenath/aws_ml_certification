@@ -18,6 +18,8 @@ This repository created to learn Machine Learning concepts over Docker and also 
 We would be building this container on top of [Ubuntu latest LTS Docker container](https://hub.docker.com/_/ubuntu/) 
 
 ## Pre-requisites to run the container locally
+0. Install [VS Code](https://code.visualstudio.com/download) and install Jupyter extension from within the VS Code IDE as shown below
+![Jupyter extension search in VS Code](image-1.png)
 1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/) locally
 2. Install [Git](https://git-scm.com/downloads) locally for Windows users
 3. Launch gitbash shell (windows) OR any shell (Linux/MacOS) 
@@ -77,4 +79,32 @@ docker ps -a
 
 ## Using Jupyter running inside the container
 
-Open http://localhost:8888 in your favorite browser to open Juypter
+1. Open http://localhost:8888 in your favorite browser to open Juypter
+
+![Jupyter in Browser](image.png)
+        
+                            OR
+
+2. Attach a Python Kernel to a Jupyter notebook. Configure the notebook to use your Jupyter running in your Docker at http://localhost:8888
+
+![Jupyter in VS Code](image-2.png)
+
+# Learning Data Science ML Algorithms using Jupyter notebooks
+
+General References -
+    1. [General Machine Learning Concepts](https://www.geeksforgeeks.org/100-days-of-machine-learning/)
+    2. [Sample Jupyter notebooks from Library basics to ML techniques](https://machine-learning-with-python.readthedocs.io/)
+
+
+1. Linear Regression -
+    
+    Linear regression is a type of supervised machine learning algorithm that computes the linear relationship between a dependent variable and one or more independent features. When the number of the independent feature, is 1 then it is known as Univariate Linear regression, and in the case of more than one feature, it is known as multivariate linear regression. The goal of the algorithm is to find the best linear equation that can predict the value of the dependent variable based on the independent variables. The equation provides a straight line that represents the relationship between the dependent and independent variables. 
+
+    Resources - 
+    a. Use the resources in "linear_regression_employee_salary_prediction" folder. Using Jupyter notebook open the file "employee_salary_prediction_notebook.ipynb" 
+
+    References - 
+
+    a. [Linear Regression Concept](https://www.geeksforgeeks.org/ml-linear-regression/)
+    b. [Linear Learner Alogirthm in Sagemaker](https://docs.aws.amazon.com/sagemaker/latest/dg/linear-learner.html) 
+
