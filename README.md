@@ -39,7 +39,9 @@ git clone https://github.com/asreenath/aws_ml_certification.git .
 
 ## Building the docker container image (Optional)
 
-If you want to build the image locally
+If you want to build the image locally, use the below command
+<br/>
+NOTE:- If you are using a Windows machine, please change the end of line to "LF"(Line Feed) for .sh files before the below command is executed
 
 ```sh
 cd <Project_Path>
