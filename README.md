@@ -91,21 +91,24 @@ docker ps -a
 
 # Learning Data Science ML Algorithms using Jupyter notebooks
 
-General References -
+### General References -
 
 1. [General Machine Learning Concepts](https://www.geeksforgeeks.org/100-days-of-machine-learning/)
 2. [Sample Jupyter notebooks from Library basics to ML techniques](https://machine-learning-with-python.readthedocs.io/)
+<br/>
 
+### Linear Regression -
+<br/>
+Linear regression is a type of supervised machine learning algorithm that computes the linear relationship between a dependent variable and one or more independent features. When the number of the independent feature, is 1 then it is known as Univariate Linear regression, and in the case of more than one feature, it is known as multivariate linear regression. The goal of the algorithm is to find the best linear equation that can predict the value of the dependent variable based on the independent variables. The equation provides a straight line that represents the relationship between the dependent and independent variables. 
 
-Linear Regression -
-    
-    Linear regression is a type of supervised machine learning algorithm that computes the linear relationship between a dependent variable and one or more independent features. When the number of the independent feature, is 1 then it is known as Univariate Linear regression, and in the case of more than one feature, it is known as multivariate linear regression. The goal of the algorithm is to find the best linear equation that can predict the value of the dependent variable based on the independent variables. The equation provides a straight line that represents the relationship between the dependent and independent variables. 
+<br/>
+Resources - 
 
-    Resources - 
-    a. Use the resources in "linear_regression_employee_salary_prediction" folder. Using Jupyter notebook open the file "employee_salary_prediction_notebook.ipynb" 
+Use the resources in <b>"linear_regression_employee_salary_prediction"</b> folder. Using Jupyter notebook open the file "employee_salary_prediction_notebook.ipynb" 
 
-    References - 
+<br/>
+References - 
 
-    a. [Linear Regression Concept](https://www.geeksforgeeks.org/ml-linear-regression/)
-    b. [Linear Learner Alogirthm in Sagemaker](https://docs.aws.amazon.com/sagemaker/latest/dg/linear-learner.html) 
+a. [Linear Regression Concept](https://www.geeksforgeeks.org/ml-linear-regression/)\
+b. [Linear Learner Alogirthm in Sagemaker](https://docs.aws.amazon.com/sagemaker/latest/dg/linear-learner.html) 
 
