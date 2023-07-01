@@ -50,21 +50,17 @@ docker build . -t aws_ml:latest
 
 ## Running the container
 
-We'll use ```notebooks``` forlder to store Jupyter Notebooks:
-```sh
-mkdir notebooks
-```
-
 Run Docker container with the following command:
 
-If you built your image locally using the build step above ->
+If you built your image locally using the build step above -
+
 ```sh
-docker run -it -p 8888:8888 -p 6006:6006 -d -v $(pwd)/notebooks:/notebooks aws_ml
+docker run -it -p 8888:8888 -p 6006:6006 -d -v notebooks:/notebooks aws_ml
 ```
 
-If you want use pre-built image from Docker hub ->
+If you want use pre-built image from Docker hub -
 ```sh
-docker run -it -p 8888:8888 -p 6006:6006 -d -v $(pwd)/notebooks:/notebooks asreenath/aws_ml
+docker run -it -p 8888:8888 -p 6006:6006 -d -v notebooks:/notebooks asreenath/aws_ml
 ```
 
 
