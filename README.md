@@ -92,7 +92,7 @@ git pull .
 docker rm $(docker ps -a -q --filter="ancestor=asreenath/aws_ml:latest") 
 ```
 
-3. Remove your existing image
+3. Remove your existing image OR from Docker Desktop UI
 ```sh
 docker image rm -f asreenath:latest
 ```
