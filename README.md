@@ -14,6 +14,7 @@ This repository created to learn Machine Learning concepts over Docker and also 
  - Keras
  - OpenCV 3
  - OpenJDK
+ - pyspark
 
 We would be building this container on top of [Ubuntu latest LTS Docker container](https://hub.docker.com/_/ubuntu/) 
 
