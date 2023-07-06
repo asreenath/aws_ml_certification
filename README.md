@@ -79,6 +79,41 @@ Verify the container is running. The status column must show "Up" for the Image 
 docker ps -a
 ```
 
+## Taking Updates for the code/image (ONLY TO BE USED WHEN NEW UPDATES ARE REQUIRED)
+
+1. Update your code repository using the `git pull` command using git bash OR from VSCode
+```sh
+cd <Project_Path>
+git pull .
+```
+
+2. Stop your existing docker container from Docker Desktop UI OR from git bash
+```sh
+docker rm $(docker ps -a -q --filter="ancestor=asreenath/aws_ml:latest") 
+```
+
+3. Remove your existing image
+```sh
+docker image rm -f asreenath:latest
+```
+
+4. Re-run the `docker run` command to run a container with latest updates 
+
+If you built your image locally using the build step above -
+
+```sh
+docker run -it -p 8888:8888 -p 6006:6006 -d -v notebooks:/notebooks aws_ml
+```
+
+If you want use pre-built image from Docker hub -
+```sh
+docker run -it -p 8888:8888 -p 6006:6006 -d -v notebooks:/notebooks asreenath/aws_ml
+```
+NOTE:- For Windows OS users , please open "Terminal" utility from VSCode and run the below command
+```sh
+docker run -it -p 8888:8888 -p 6006:6006 -d -v .\notebooks:/notebooks asreenath/aws_ml
+```
+
 ## Using Jupyter running inside the container
 
 1. Open http://localhost:8888 in your favorite browser to open Juypter
