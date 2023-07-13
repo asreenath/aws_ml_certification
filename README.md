@@ -246,6 +246,8 @@ Use the resources in <b>"data_analysis"</b> folder. Using Jupyter notebook open 
 
 <b>References</b> - 
 
+- [Data Pre-Processing Example - 1](https://www.linkedin.com/pulse/detailed-preprocessing-process-machine-learning-python-leonardo-a/)
+- [Data Pre-Processing Example - 2](https://rubikscode.net/2021/06/29/top-9-feature-engineering-techniques/)
 
 ## Modeling Algorithms
 

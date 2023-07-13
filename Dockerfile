@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
     rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install tensorflow && \
-    pip3 install numpy pandas scikit-learn scikit-image matplotlib seaborn jupyter pyyaml h5py Cython requests pyspark && \
+    pip3 install numpy pandas scikit-learn scikit-image matplotlib seaborn jupyter pyyaml h5py Cython requests pyspark mlxtend && \
     pip3 install keras --no-deps && \
     pip3 install opencv-python && \
     pip3 install imutils
